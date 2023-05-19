@@ -35,7 +35,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install SWIG
-        run: choco install swig -y
+        run: choco install --force swig -y
 
       - name: Build wheels
         run: |
